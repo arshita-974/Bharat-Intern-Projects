@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">Temperature Converter</nav>
+    <div class="subheading">
+      Convert Temperature from °C to °F and vice versa!
+    </div>
+    <div class="form-container">
+      <form>
+        <p>Enter the Temperature:</p>
+        <div class="input-container">
+          <label for="TinC">Temperature in °C:</label>
+          <input type="text" id="TinC" name="TinC" />
+        </div>
+        <p class="divider">or</p>
+        <div class="input-container">
+          <label for="TinF">Temperature in F:</label>
+          <input type="text" id="TinF" name="TinF" />
+        </div>
+        <p>Choose the type of Conversion:</p>
+        <div class="radio-container">
+          <input
+            type="radio"
+            id="CtoF"
+            name="Conversion"
+            value="Celcius to Fahrenhiet"
+          />
+          <label for="CtoF">Celcius to Fahrenhiet</label>
+        </div>
+        <p class="divider">or</p>
+        <div class="radio-container">
+          <input
+            type="radio"
+            id="FtoC"
+            name="Conversion"
+            value="Fahrenhiet to Celcius"
+          />
+          <label for="FtoC">Fahrenhiet to Celcius</label>
+        </div>
+        <button id="convert" type="button" class="form-button">Convert</button>
+      </form>
+      <div class="output" id="output">
+        <p>Result:</p>
+        <p id="result" class="result"></p>
+      </div>
+      <button id="reset" type="button" class="reset-btn">Reset</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
